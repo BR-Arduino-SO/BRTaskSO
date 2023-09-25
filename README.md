@@ -1,18 +1,35 @@
 # Syntax Coloring Map Servo
 
+## Datatypes
 
-# Datatypes (KEYWORD1)
+Processo
+Int
+Void
 
-Semaforo	KEYWORD1
+## Class, Methods and Functions
 
-# Methods and Functions (KEYWORD2)
+class Processo
 
-encender	KEYWORD2
+Processo()
+Processo(int id, int tempo, int prior)
+int getID()
+int getTempo()
+int getPrior()
+void setID(int id)
+void setTempo(int tempo)
+void setPrior(int prior)
+void ExecProc()
 
-# Constants (LITERAL1)
+## Constants
 
-ACTIVADO	LITERAL1
+NR_PROCS
 
-# Variables (LITERAL1)
+## Variables
 
-estado_sensor_luz	LITERAL1
+Processo *processos[NR_PROCS];
+int task_running = -1;
+int task_id
+
+int id
+int tempo
+int prior
