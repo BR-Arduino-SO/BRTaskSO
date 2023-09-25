@@ -2,9 +2,9 @@
 
 ## Datatypes
 
-Processo
-Int
-Void
+- Processo
+- Int
+- Void
 
 ## Class, Methods and Functions
 
