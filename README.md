@@ -11,13 +11,15 @@
 - class Processo
 
 - Processo()
-- Processo(int id, int tempo, int prior)
+- Processo(int id, int tempo, int prior, int status)
 - int getID()
 - int getTempo()
 - int getPrior()
+- int getStatus()
 - void setID(int id)
 - void setTempo(int tempo)
 - void setPrior(int prior)
+- void setStatus(int status)
 - void ExecProc()
 
 ## Constants
@@ -33,3 +35,4 @@
 - private int id
 - private int tempo
 - private int prior
+- private int status
