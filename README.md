@@ -30,6 +30,6 @@
 - int task_running = -1;
 - int task_id
 
-- int id
-- int tempo
-- int prior
+- private int id
+- private int tempo
+- private int prior
