@@ -9,16 +9,6 @@
 
 //#include "Arduino.h"
 
-// Número de Processos em Execução
-extern int NR_PROCS;
-extern void NRProcs(int Nr_Procs);
-
-// Identificador do Processo Atual
-extern int task_id;
-
-// Contador de Processos
-extern int task_running;
-
 class Processo {
   
   private:
@@ -29,7 +19,7 @@ class Processo {
   
   public:
   	Processo(){};
-  	Processo(int id, int tempo, int prior, int status);
+  	Processo(int id, int tempo, int prior);
   	int getID();
   	int getTempo();
   	int getPrior();
@@ -42,6 +32,20 @@ class Processo {
   
 };
 
+// Número de Processos em Execução
+extern int NR_PROCS;
+extern void NRProcs(int Nr_Procs);
+extern void inicializar_sistema();
+extern void finalizar();
+
+// Identificador do Processo Atual
+extern int task_id;
+
+// Contador de Processos
+extern int task_running;
+
+extern Processo processos;
 int escalonador(int task_id);
+void fifo();
 
 #endif

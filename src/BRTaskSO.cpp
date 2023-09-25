@@ -3,7 +3,7 @@
 
 /* CONTRUTOR E FUNÇÕES DA CLASSE PROCESSO */
 
-Processo::Processo(int id, int tempo, int prior, int status)
+Processo::Processo(int id, int tempo, int prior)
 {
   this->id = id;
   this->tempo = tempo;// SJF
@@ -56,17 +56,11 @@ void Processo::ExecProc()
 
 /* VARIÁVEIS DE INICIALIZAÇÃO DOS PROCESSOS */
 
-#define NR_PROCS 10
+int NR_PROCS = 10;
 
-// void NRProcs(int Nr_Procs){
-//     NR_Procs = Nr_Procs;
-// }
-
-// Criação do Vetor vazio de Processos
-Processo *processos[NR_PROCS];
-
-// Inicialização da variável de contagem de processos
-int task_running = -1;
+void NRProcs(int Nr_Procs){
+    NR_PROCS = Nr_Procs;
+}
 
 /* FUNÇÕES DOS PROCESSOS */
 
@@ -84,7 +78,7 @@ void fifo()// Algoritmo de Escalonamento de Processos FIFO
 { 
   while(true){
     task_running = escalonador(task_running);
-    
+    Serial.println(task_running);
     //iluminaLED(led_proc_inic);// Inicializa processo
     
     // Execução do processo
@@ -96,12 +90,21 @@ void fifo()// Algoritmo de Escalonamento de Processos FIFO
   }
 }
 
+
+
+
+
 /* FUNÇÕES DE INCIALIZAÇÃO E FINALIZAÇÃO */
 
 void inicializar_sistema()
 {
 	Serial.begin(9600);
-	fifo();
+
+    // Criação do Vetor vazio de Processos
+    Processo processos[NR_PROCS];
+
+    // Inicialização da variável de contagem de processos
+    int task_running = -1;
 }
 
 void finalizar_sistema()
