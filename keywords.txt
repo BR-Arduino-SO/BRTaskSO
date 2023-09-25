@@ -1,0 +1,55 @@
+#######################################
+# Syntax Coloring Map Servo
+#######################################
+
+#######################################
+# Datatypes (KEYWORD1)
+#######################################
+
+Semaforo	KEYWORD1
+Buzzer	KEYWORD1
+LuzCalle	KEYWORD1
+SensorCalle	KEYWORD1
+SensorLuz	KEYWORD1
+Pulsador	KEYWORD1
+
+#######################################
+# Methods and Functions (KEYWORD2)
+#######################################
+
+encender	KEYWORD2
+apagar	KEYWORD2
+leer	KEYWORD2
+esperar	KEYWORD2
+leer_analogico	KEYWORD2
+mostrar_cartel	KEYWORD2
+mostrar_numero	KEYWORD2
+ingresar_numero	KEYWORD2
+inicializar_sistema	KEYWORD2
+finalizar	KEYWORD2
+
+#######################################
+# Constants (LITERAL1)
+#######################################
+ACTIVADO	LITERAL1
+DESACTIVADO	LITERAL1
+PRESIONADO	LITERAL1
+NO_PRESIONADO	LITERAL1
+ROJO	LITERAL1
+AMARILLO	LITERAL1
+VERDE	LITERAL1
+NOCHE	LITERAL1
+DIA	LITERAL1
+REPETIR	LITERAL1
+
+#######################################
+# Variables (LITERAL1)
+#######################################
+estado_sensor_luz	LITERAL1
+estado_pulsador1	LITERAL1
+estado_pulsador2	LITERAL1
+estado_sensor1	LITERAL1
+estado_sensor2	LITERAL1
+numero_ingresado	LITERAL1
+valor_sensor_luz	LITERAL1
+contador	LITERAL1
