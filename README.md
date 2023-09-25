@@ -26,7 +26,7 @@
 
 ## Constants
 
-- NR_PROCS
+- int NR_PROCS
 
 ## Variables
 
