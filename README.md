@@ -22,6 +22,8 @@
 - void setStatus(int status)
 - void ExecProc()
 
+- void NRProcs(int NR_Procs)
+
 ## Constants
 
 - NR_PROCS
