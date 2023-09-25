@@ -1,4 +1,4 @@
-# Syntax Coloring Map Servo
+# Syntax Map
 
 ## Datatypes
 
