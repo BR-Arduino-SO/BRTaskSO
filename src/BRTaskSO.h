@@ -7,22 +7,21 @@
 #ifndef BRTaskSO_h
 #define BRTaskSO_h
 
-#include "Arduino.h"
+//#include "Arduino.h"
 
 // Número de Processos em Execução
-const int NR_PROCS = 10;
-extern void NRProcs(int NR_Procs);
+extern int NR_PROCS;
+extern void NRProcs(int Nr_Procs);
 
 // Identificador do Processo Atual
 extern int task_id;
 
 // Contador de Processos
-extern int task_running = -1;
+extern int task_running;
 
 class Processo {
   
   private:
-  	int i;
   	int id;
   	int tempo;
   	int prioridade;
@@ -43,7 +42,6 @@ class Processo {
   
 };
 
-// Criação do Vetor vazio de Processos
-extern Processo *processos[NR_PROCS];
+int escalonador(int task_id);
 
 #endif
